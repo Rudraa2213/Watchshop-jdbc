@@ -23,7 +23,7 @@ public class Controller implements Productservice{
 	public Controller() {
 		try {
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/watchshop2", "root", "Rudraa");
+		conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Database", "root", "root");
 		stm=conn.createStatement();
 		stm.execute(query1);
 		}
